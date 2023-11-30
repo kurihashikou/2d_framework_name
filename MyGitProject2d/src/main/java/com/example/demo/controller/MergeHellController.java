@@ -4,15 +4,23 @@ import java.util.Random;
 
 public class MergeHellController {
 	public static void main(String[] args) {
+		kadaiA();
 		kadaiB();
-
 	}
 
+		static void kadaiA() {
+
+			for(int i = 1; i <= 10; i++) {
+				System.out.println("現在" + i + "回目のループです。");
+			}
+		}
+
 		static void kadaiB() {
-			Random rnd = new Random();
-					int x = rnd.nextInt(100);
-					x = x + 1;
-					System.out.println(x + "が出ました");
+	//ここに課題を書く。メソッド名変えてね。
+			Random random = new Random();
+			int i = random.nextInt(100);
+			System.out.println(i + 1 + "が出ました。");
 
 		}
+
 }
