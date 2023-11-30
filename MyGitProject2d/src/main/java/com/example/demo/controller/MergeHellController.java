@@ -1,15 +1,18 @@
 package com.example.demo.controller;
 
+import java.util.Random;
+
 public class MergeHellController {
 	public static void main(String[] args) {
-		kadaiA();
-//		kadaiB();
-//		kadaiC();
+		kadaiB();
+
 	}
 
-		static void kadaiA() {
-			for(int i = 0; i < 10; i++) {
-				System.out.println(i + "回目のループです。");
-			}
+		static void kadaiB() {
+			Random rnd = new Random();
+					int x = rnd.nextInt(100);
+					x = x + 1;
+					System.out.println(x + "が出ました");
+
 		}
 }
